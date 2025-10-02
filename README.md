@@ -4,55 +4,57 @@ Final project for the Building AI course
 
 ## Summary
 
-SmartKitchenAI helps households reduce food waste by tracking ingredients, suggesting recipes based on what’s about to expire, and providing reminders. Building AI course project. 
-
+This project is about making an app that helps people waste less food at home. It keeps track of what you have, reminds you before food expires, and gives recipe ideas using your ingredients. Building AI course project. 
 
 ## Background
 
-Every year, millions of tons of food are wasted by households. This causes both financial loss and environmental damage. Many people forget what’s in their fridge or don’t know how to cook with what they have.
+A lot of food gets thrown away just because people forget about it in the fridge. That’s money wasted and bad for the environment. I noticed that at my house we sometimes buy stuff, then don’t use it in time.
 
-* Problem: Food is wasted because people forget expiry dates.
-* Problem: Lack of ideas for how to use available ingredients.
-* Problem: Environmental impact of wasted food.
+Problems this tries to fix:
 
-Motivation: I personally find myself throwing away expired food often. I want a smarter, AI-driven way to make use of what I already bought.
+* forgetting what’s in the fridge
+* not knowing what to cook with what you already have
+* throwing away food and money
 
+My motivation is that I want to help save food, save money, and also help the planet.
 
 ## How is it used?
 
-* Users scan receipts or use a mobile app to track their groceries.
-* AI recommends recipes tailored to the user’s pantry and dietary preferences.
-* Notifications remind users when food items are close to expiration.
+* You would use an app on your phone.
+* You type in or scan the food you bought.
+* The app reminds you when food is close to expiring.
+* It also shows recipes that use the food you already have.
 
-The app would mainly serve families, students, and anyone trying to save money or reduce waste.
-
+It would be useful for families, students, or anyone who wants to waste less food.
 
 ## Data sources and AI methods
 
-* Grocery receipt datasets, barcode APIs, or user input.
-* Recipe databases (open datasets such as RecipeNLG).
-* AI methods:
-     * Natural Language Processing (for recipe matching and text parsing).
-     * Recommender systems (for recipe suggestions).
-     * Image recognition (optional, for scanning items).
+The app would need:
+
+* Grocery or receipt data (could come from scanning barcodes or typing it in).
+* Recipe data (from online recipe collections).
+
+AI methods:
+
+* A recommender system (to suggest recipes).
+* Maybe some image recognition if you wanted to take a photo of your food.
 
 ## Challenges
 
-* Not all food items are barcoded (homemade or fresh produce).
-* Some users may forget to scan items, leading to incomplete data.
-* Ethical considerations: privacy of shopping data and dietary habits.
+* People might forget to enter their food into the app.
+* Not all food has a barcode, like homemade stuff or fresh fruit.
+* Privacy could be a concern because shopping data is personal.
 
 ## What next?
 
-Future expansions could include:
+In the future, this could:
 
-* Smart fridge integration with IoT sensors.
-* Collaboration with grocery stores to sync purchase data.
-* Community recipe sharing powered by AI. 
-
+* connect to smart fridges that automatically track food
+* partner with grocery stores so receipts go straight into the app
+* have a community where people share recipes and tips
 
 ## Acknowledgments
 
-* Inspired by food waste statistics from the UN.
-* Recipe datasets like RecipeNLG (openly available).
-* Sleeping Cat on Her Back by Umberto Salvagnin / CC BY 2.0
+* Inspired by food waste articles and statistics I found online.
+* Recipe datasets like RecipeNLG are open and useful.
+* Idea also came from my own experience of food spoiling at home.
