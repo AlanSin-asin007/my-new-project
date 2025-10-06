@@ -1,60 +1,77 @@
-# SmartKitchenAI – Reducing Food Waste at Home
+# StudyBuddy – AI That Helps You Review Notes
 
 Final project for the Building AI course
 
 ## Summary
 
-This project is about making an app that helps people waste less food at home. It keeps track of what you have, reminds you before food expires, and gives recipe ideas using your ingredients. Building AI course project. 
+StudyBuddy is an AI tool that helps students study smarter. It reads your class notes and automatically creates short quiz questions or flashcards to help you review. Building AI course project.
 
 ## Background
 
-A lot of food gets thrown away just because people forget about it in the fridge. That’s money wasted and bad for the environment. I noticed that at my house we sometimes buy stuff, then don’t use it in time.
+When studying for exams, it’s hard to know what to focus on. Reading the same notes over and over can get boring, and sometimes we don’t realize which topics are the most important. I wanted to make something that makes studying easier and more fun.
 
-Problems this tries to fix:
+Problems this idea tries to solve:
 
-* forgetting what’s in the fridge
-* not knowing what to cook with what you already have
-* throwing away food and money
+* Students don’t know how to turn notes into study questions.
+* Studying from plain text is boring and not interactive.
+* People waste time figuring out what’s important instead of actually learning.
 
-My motivation is that I want to help save food, save money, and also help the planet.
+My motivation is that I often take a lot of notes but don’t use them effectively. If an AI could turn my notes into quick quizzes, I’d probably study more often and remember things better.
 
 ## How is it used?
 
-* You would use an app on your phone.
-* You type in or scan the food you bought.
-* The app reminds you when food is close to expiring.
-* It also shows recipes that use the food you already have.
+* The student uploads or copies their notes into the app.
+* AI scans the text, finds key terms and definitions.
+* It automatically creates simple quiz questions or flashcards like:
+  * “What is photosynthesis?”
+  * “Define Newton’s Second Law.”
+* The student can then test themselves before a test or exam.
 
-It would be useful for families, students, or anyone who wants to waste less food.
+It could be used by middle school, high school, or college students (basically anyone who studies using notes).
 
 ## Data sources and AI methods
 
-The app would need:
+Data sources:
 
-* Grocery or receipt data (could come from scanning barcodes or typing it in).
-* Recipe data (from online recipe collections).
+* The user’s own notes (entered as text).
+* Optionally, open educational text datasets for improving the AI.
 
 AI methods:
 
-* A recommender system (to suggest recipes).
-* Maybe some image recognition if you wanted to take a photo of your food.
+* Natural Language Processing (NLP) for finding key terms and sentences.
+* Simple keyword extraction or question generation.
+* Could later use machine learning to rank which topics appear most often.
 
+Example of how a simple version could work in Python:
+```
+def make_quiz(notes):
+    lines = notes.split(".")
+    for line in lines:
+        if "is" in line:
+            parts = line.split(" is ")
+            print("Question: What is " + parts[0].strip() + "?")
+            print("Answer:", parts[1].strip())
+
+make_quiz("Photosynthesis is the process by which plants make food. Gravity is a force that pulls objects down.")
+```
 ## Challenges
 
-* People might forget to enter their food into the app.
-* Not all food has a barcode, like homemade stuff or fresh fruit.
-* Privacy could be a concern because shopping data is personal.
+* The AI might not always make perfect questions (some could be too easy or confusing).
+* Different subjects use different formats (math vs. history vs. biology).
+* Privacy: if notes are uploaded online, they need to be stored safely.
 
 ## What next?
 
-In the future, this could:
+In the future, StudyBuddy could:
 
-* connect to smart fridges that automatically track food
-* partner with grocery stores so receipts go straight into the app
-* have a community where people share recipes and tips
+* Work with Google Docs or Notion to pull notes automatically.
+* Let students share quizzes with classmates.
+* Include voice or flashcard games for more interactive studying.
+
+To keep improving it, I’d need help from people who know more about natural language processing and user interface design.
 
 ## Acknowledgments
 
-* Inspired by food waste articles and statistics I found online.
-* Recipe datasets like RecipeNLG are open and useful.
-* Idea also came from my own experience of food spoiling at home.
+* Inspired by my own struggles while studying for tests.
+* Idea influenced by AI-based note-taking tools and flashcard apps like Quizlet.
+* Coding concept inspired by Python NLP tutorials.
