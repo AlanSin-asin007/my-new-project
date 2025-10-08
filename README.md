@@ -75,3 +75,5 @@ To keep improving it, I’d need help from people who know more about natural la
 * Inspired by my own struggles while studying for tests.
 * Idea influenced by AI-based note-taking tools and flashcard apps like Quizlet.
 * Coding concept inspired by Python NLP tutorials.
+
+![StudyBuddy flowchart](studybuddy-flowchart.jpeg)
